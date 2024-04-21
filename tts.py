@@ -12,12 +12,13 @@ myobj.save("welcome.mp3")
 os.system("start welcom.mp3")
 
 def go_clicked():
+    mytext=textbox.get()
     msg="thank you for your input"
     tkinter.messagebox.showinfo(msg)
     language='en'
-    myobj=gTTS(text=msg, lang=language, slow=False)
-    myobj.save("welcome.mp3")
-    os.system("start welcom.mp3")
+    #myobj=gTTS(text=msg, lang=language, slow=False)
+    #myobj.save("welcome.mp3")
+    #os.system("start welcom.mp3")
 
 greeting.pack()
 usertext = tk.StringVar()
